@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#151823"/>
+      <stop offset="1" stop-color="#0b0c10"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#d6b46a"/>
+      <stop offset="1" stop-color="#a9863c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="40%" cy="18%" r="70%">
+      <stop offset="0" stop-color="#d6b46a" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#d6b46a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="520" rx="40" fill="url(#bg)"/>
+  <rect width="900" height="520" rx="40" fill="url(#glow)"/>
+  <circle cx="710" cy="120" r="160" fill="#d6b46a" opacity="0.06"/>
+  
+        <g fill="none" stroke="url(#g)" stroke-width="7" opacity="0.95">
+          <rect x="220" y="110" width="80" height="160" rx="26"/>
+          <path d="M232 110V84h56v26"/>
+          <path d="M236 170h48"/>
+          <path d="M236 210h48"/>
+        </g>
+        
+  <text x="450" y="72" text-anchor="middle" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Arial" font-size="34" font-weight="900" fill="#f3f4f6">Kashmere Beard Growth Oil</text>
+  <text x="450" y="108" text-anchor="middle" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Arial" font-size="16" font-weight="700" fill="#b7bcc7">Lightweight Oil for Fuller-Looking Beards</text>
+  <text x="450" y="470" text-anchor="middle" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Arial" font-size="14" font-weight="700" fill="#b7bcc7">Premium • Small-batch • Secure checkout</text>
+</svg>

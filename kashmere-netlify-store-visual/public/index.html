@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kashmere Beard Care</title>
+  <meta name="description" content="Two essentials. One better beard. Beard Butter, Beard Growth Oil, and the Kashmere Beard Kit." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- SVG icons -->
+  <div aria-hidden="true" style="position:absolute; width:0; height:0; overflow:hidden">
+    <object data="assets/icons.svg" type="image/svg+xml"></object>
+  </div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="Kashmere home">
+        <img src="assets/logo.svg" alt="Kashmere Beard Care" style="height:38px; width:auto;">
+      </a>
+      <nav class="nav">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a class="cta" href="#shop">Shop Beard Kit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="pill">
+            <span style="color:var(--gold);font-weight:900;">🔒</span>
+            Secure checkout • Apple Pay • Google Pay • PayPal
+          </div>
+          <h1>Two Essentials.<br/>One Better Beard.</h1>
+          <p class="subhead">
+            Premium beard care made to soften, nourish, and support healthy growth—without the fluff.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn primary" data-buy="beard_kit">Buy the Beard Kit</button>
+            <a class="btn ghost" href="#shop">Shop individually</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust-item">🔒 Secure checkout</div>
+            <div class="trust-item">🚚 Fast shipping</div>
+            <div class="trust-item">⭐ Satisfaction guarantee</div>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Featured product: Kashmere Beard Kit">
+          <div class="badge">BEST VALUE</div>
+          <img src="assets/beard-kit.svg" alt="The Kashmere Beard Kit image" />
+          <div class="hero-card-body">
+            <div class="title">The Kashmere Beard Kit</div>
+            <div class="price">$34</div>
+            <div class="muted small">Includes Beard Butter + Beard Growth Oil</div>
+            <div style="height:10px"></div>
+            <button class="btn primary full" data-buy="beard_kit">Checkout</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="shop">
+      <div class="container">
+        <h2>How do you want to start?</h2>
+        <div class="cards3">
+          <div class="card">
+            <img class="thumb" src="assets/beard-butter.svg" alt="Beard Butter" />
+            <div class="card-body">
+              <div class="card-top">
+                <div>
+                  <h3>Kashmere Beard Butter</h3>
+                  <div class="muted">Deep Conditioning Beard & Skin Butter</div>
+                </div>
+                <div class="price">$18</div>
+              </div>
+              <ul class="bullets">
+                <li>Deep moisture without heaviness</li>
+                <li>Softens beard & soothes dry skin</li>
+                <li>Shea butter + natural oils</li>
+              </ul>
+              <button class="btn full" data-buy="beard_butter">Add to Cart → Checkout</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="thumb" src="assets/growth-oil.svg" alt="Beard Growth Oil" />
+            <div class="card-body">
+              <div class="card-top">
+                <div>
+                  <h3>Kashmere Beard Growth Oil</h3>
+                  <div class="muted">Lightweight Oil for Fuller-Looking Beards</div>
+                </div>
+                <div class="price">$20</div>
+              </div>
+              <ul class="bullets">
+                <li>Supports healthy beard growth</li>
+                <li>Reduces itch & dryness</li>
+                <li>Fast-absorbing, non-greasy feel</li>
+              </ul>
+              <button class="btn full" data-buy="growth_oil">Add to Cart → Checkout</button>
+            </div>
+          </div>
+
+          <div class="card best">
+            <div class="tag">BEST VALUE</div>
+            <img class="thumb" src="assets/beard-kit.svg" alt="Beard Kit" />
+            <div class="card-body">
+              <div class="card-top">
+                <div>
+                  <h3>The Kashmere Beard Kit</h3>
+                  <div class="muted">Complete Beard Care Essentials (Bundle)</div>
+                </div>
+                <div class="price">$34</div>
+              </div>
+              <ul class="bullets">
+                <li>Includes butter + oil</li>
+                <li>Best results + best value</li>
+                <li>Save vs. buying separately</li>
+              </ul>
+              <button class="btn primary full" data-buy="beard_kit">Add to Cart → Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container split">
+        <div>
+          <h2>About Kashmere</h2>
+          <p class="muted">
+            A focused routine for real results: nourish with oil, seal with butter, stay consistent.
+            Small-batch feel with big-brand polish.
+          </p>
+          <p class="muted small">
+            Note: This starter uses Stripe Checkout for payments. You can add shipping/tax rules and fulfillment integrations as you scale.
+          </p>
+        </div>
+        <div class="callout">
+          <div class="callout-title">Guarantee</div>
+          <p class="muted">Love your beard care experience—or we’ll make it right.</p>
+          <div style="height:10px"></div>
+          <div class="muted small">Secure payments powered by Stripe.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Is checkout secure?</summary>
+          <p>Yes. Payments are handled by Stripe’s PCI-compliant hosted checkout.</p>
+        </details>
+        <details>
+          <summary>How do I use the kit?</summary>
+          <p>Use the oil daily on beard + skin. Follow with the butter to lock in moisture and softness.</p>
+        </details>
+        <details>
+          <summary>How fast is shipping?</summary>
+          <p>Update this with your actual processing/shipping timelines (e.g., ships in 1–2 business days).</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="muted">© <span id="year"></span> Kashmere. All rights reserved.</div>
+      <div class="muted">Secure payments via Stripe • Apple Pay • Google Pay • PayPal</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
