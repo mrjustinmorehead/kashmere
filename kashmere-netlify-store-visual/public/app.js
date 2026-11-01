@@ -1,29 +1,8 @@
-async function buy(id){
-  const btns = document.querySelectorAll('button[data-buy]');
-  btns.forEach(b => { b.disabled = true; b.dataset.prev = b.textContent; b.textContent = "Redirecting…"; });
-
-  try{
-    const res = await fetch('/.netlify/functions/create-checkout-session', {
-      method: 'POST',
-      headers: {'Content-Type':'application/json'},
-      body: JSON.stringify({ id })
-    });
-    if(!res.ok) throw new Error(await res.text());
-    const data = await res.json();
-    if(!data.url) throw new Error("Missing Stripe URL");
-    window.location.href = data.url;
-  }catch(err){
-    console.error(err);
-    alert("Checkout error: " + err.message);
-  }finally{
-    btns.forEach(b => { b.disabled = false; b.textContent = b.dataset.prev || b.textContent; });
-  }
-}
-
-document.addEventListener('click', (e) => {
-  const btn = e.target.closest('button[data-buy]');
-  if(!btn) return;
-  buy(btn.getAttribute('data-buy'));
-});
-
-document.getElementById('year').textContent = new Date().getFullYear();
+const products={beard_butter:{name:'Beard & Body Butter',price:25,detail:'4 oz · 118 ml'},growth_oil:{name:'Beard Growth Oil',price:10,detail:'2 oz · 59 ml'},beard_kit:{name:"The King's Bundle",price:45,detail:'2 butters + 1 oil'}};
+let cart={};try{const saved=JSON.parse(localStorage.getItem('kashmere-bag')||'{}');for(const [id,q]of Object.entries(saved))if(products[id]&&Number.isInteger(q)&&q>0&&q<=20)cart[id]=q}catch{}
+const dialog=document.getElementById('cart'),items=document.getElementById('cart-items'),checkout=document.getElementById('checkout'),message=document.getElementById('checkout-message');
+const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
+function render(){try{localStorage.setItem('kashmere-bag',JSON.stringify(cart))}catch{}document.getElementById('cart-count').textContent=Object.values(cart).reduce((a,b)=>a+b,0);document.getElementById('subtotal').textContent=money(Object.entries(cart).reduce((s,[id,q])=>s+products[id].price*q,0));items.replaceChildren();checkout.disabled=!Object.keys(cart).length;for(const [id,q]of Object.entries(cart)){const p=products[id],line=document.createElement('article');line.className='cart-line';line.innerHTML=`<div><h3>${p.name}</h3><span>${money(p.price*q)}</span></div><p>${p.detail} · ${money(p.price)} each</p><div class="quantity"><button data-change="${id}" data-delta="-1" aria-label="Decrease ${p.name} quantity">−</button><span aria-label="Quantity">${q}</span><button data-change="${id}" data-delta="1" aria-label="Increase ${p.name} quantity" ${q>=20?'disabled':''}>+</button><button data-remove="${id}" class="remove">Remove</button></div>`;items.append(line)}if(!Object.keys(cart).length)items.innerHTML='<p class="empty">Your next ritual starts here. Explore the collection and add your essentials.</p>'}
+let timer;document.addEventListener('click',e=>{const add=e.target.closest('[data-add]'),change=e.target.closest('[data-change]'),remove=e.target.closest('[data-remove]');if(add){const id=add.dataset.add;if(!products[id])return;if((cart[id]||0)>=20){dialog.showModal();return}cart[id]=(cart[id]||0)+1;message.textContent='';render();const toast=document.getElementById('toast');toast.textContent=products[id].name+' added to your bag';toast.classList.add('visible');clearTimeout(timer);timer=setTimeout(()=>toast.classList.remove('visible'),2400)}if(change){const id=change.dataset.change;cart[id]=Math.min(20,(cart[id]||0)+Number(change.dataset.delta));if(cart[id]<=0)delete cart[id];message.textContent='';render()}if(remove){delete cart[remove.dataset.remove];message.textContent='';render()}});
+document.getElementById('open-cart').addEventListener('click',()=>dialog.showModal());document.getElementById('close-cart').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right)dialog.close()}});
+checkout.addEventListener('click',async()=>{if(checkout.disabled)return;checkout.disabled=true;checkout.textContent='Opening secure checkout…';message.textContent='';try{const r=await fetch('/.netlify/functions/create-checkout-session',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({items:Object.entries(cart).map(([id,quantity])=>({id,quantity}))})});const data=await r.json().catch(()=>({}));if(!r.ok)throw new Error(data.error||'Checkout is temporarily unavailable. Please message Kashmere on Instagram for help.');const url=new URL(data.url);if(url.protocol!=='https:'||url.hostname!=='checkout.stripe.com')throw new Error('Checkout could not be opened. Please contact Kashmere.');location.assign(url.href)}catch(e){message.textContent=e.message;checkout.disabled=false;checkout.textContent='Continue to checkout ↗'}});document.getElementById('year').textContent=new Date().getFullYear();render();
