@@ -39,3 +39,9 @@ Sources reviewed:
 - Official price sheet: https://www.instagram.com/p/DZQYK41iX-T/?img_index=2 (June 6, 2026). Its parent carousel carried an Instagram AI content label. Published as an optional full-size price-sheet image, not a product photograph.
 
 The gallery appears after the collection, with full-image links, source-post links and a note that packaging varies between posts. Current catalog cards and pricing remain unchanged. No private messages, personal portrait posts, commenter testimonials, credentials or session information were included. Payments remain disabled for the prelaunch preview.
+
+## Official logo and palette
+
+The user supplied and authorized `file_0000000014b881f5b3136f48717d760c.png` as the official identity. `public/assets/official-logo.svg` contains a lossless WebP encoding of that exact image, with identical RGB pixels verified before integration. Native SVG viewports frame the supplied wordmark and emblem for the header/footer and favicon; the founder panel displays the complete approved lockup. No approximation or new AI-generated logo was substituted.
+
+The page palette now uses deep navy #001C47, warm gold #F8CE70, cream #FFF5DC and supporting blue panels. Header, footer, hero seal, buttons, product panels, gallery borders, help sections and shopping dialogs use the coordinated palette. Existing Instagram photographs/artwork and product illustration artwork retain their original designs. Founder spelling remains Terrence Carr. The preview/noindex status and disabled checkout remain in place.
