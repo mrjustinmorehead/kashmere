@@ -21,7 +21,7 @@ JavaScript syntax checks passed. Mock checkout checks covered malformed input, i
 
 ## November storefront improvements
 
-- Added user-confirmed founder credit for Terrance Carr. The public Instagram profile describes the account as the Kashmere Beard and Body Butter creator/operator. Product posts required sign-in during review, and retrieval services had no indexed product information. No unverified ingredients, scent options, customer reviews, founder quotes or delivery/return promises were added.
+- Added user-confirmed founder credit for Terrence Carr. The public Instagram profile describes the account as the Kashmere Beard and Body Butter creator/operator. Product posts required sign-in during review, and retrieval services had no indexed product information. No unverified ingredients, scent options, customer reviews, founder quotes or delivery/return promises were added.
 - Replaced cropped collection views on individual cards with dedicated SVG product assets. These are illustrations, not product photographs. Updated the native crown-and-beard mark to keep the header and favicon consistent with the packaging.
 - Added product-detail dialogs, cart thumbnails, an actionable View bag notification, larger supporting text, prominent shipping estimates, a more specific hero, and a founder section.
 - The site is explicitly a collection preview. `ONLINE_CHECKOUT_ENABLED` in public/app.js is false; the bag works, but the payment button stays disabled. Stripe and the custom domain are intentionally deferred by the user. The backend was not changed in this pass.
