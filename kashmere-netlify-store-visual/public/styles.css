@@ -18,3 +18,41 @@ body{font-size:15px;line-height:1.8}
 @media(max-width:650px){.instagram-gallery{padding-bottom:60px}.instagram-gallery .section-heading>p{max-width:none}.instagram-grid{grid-template-columns:1fr;gap:38px}.instagram-photo{aspect-ratio:3/4}.instagram-card h3{font-size:32px}.instagram-card figcaption{padding-top:18px}.instagram-card figcaption .eyebrow{font-size:9px;letter-spacing:1.2px}.instagram-card figcaption>p:not(.eyebrow){font-size:14px}.image-expand{font-size:11px;right:12px;bottom:12px}.gallery-footer{padding-top:20px;margin-top:28px;gap:16px}.gallery-footer>p{font-size:12px}footer .footer-links{max-width:160px}}
 /* Frame the jars on the page; the full-image link preserves the original post image. */
 .product-photo-link img{position:absolute;bottom:0;left:0;height:115%;width:100%;object-fit:cover;object-position:center bottom}
+
+/* Official identity: supplied crowned-beard logo, deep navy and warm gold. */
+:root{--bg:#001c47;--panel:#082b55;--cream:#fff5dc;--muted:#c1cee0;--gold:#f8ce70;--line:#d4e0f026;color-scheme:dark}
+body{background:var(--bg);color:var(--cream)}
+header{background:#001c47f5;border-bottom-color:#f8ce7028}
+.announcement{background:var(--gold);color:#001c47}.header-inner{height:96px}
+.brand-identity{display:inline-flex;align-items:center;gap:10px;flex:none;line-height:1}
+.brand-symbol{width:42px;height:57px;object-fit:contain;flex:none}
+.brand-type{display:block;width:210px;height:63px;overflow:hidden;flex:none}
+.header-inner nav a:hover,footer a:hover{color:var(--gold)}
+.bag{color:var(--cream)}.bag span{border-color:var(--gold);color:var(--gold)}
+.hero-copy .intro{color:#d0daea}.hero-note{color:#b4c4db}.hero-visual{background:radial-gradient(ellipse at 50% 60%,#244c7a50,transparent 72%);border-bottom-color:#f8ce7050}
+.product-halo{border-color:#f8ce7040;background:linear-gradient(125deg,#0c396338,#001c4700)}
+.round-seal{background:#001c47;border-color:#f8ce7066;outline-color:#f8ce7028;color:var(--gold)}
+.official-seal{display:grid;place-items:center;padding:8px;transform:rotate(8deg)}.official-seal img{height:66px;width:48px;object-fit:contain}
+.hero-caption span:first-child{color:var(--gold)}.hero-caption span:last-child,.vertical-label{color:#c1cee0}
+.benefit-strip{background:#08264e;border-color:var(--line)}.benefit-strip .wrap{color:#e3d8bf}
+.gold{background:var(--gold);color:#001c47;border-color:var(--gold)}.gold:hover{background:#ffdc8d}
+.outline{border-color:#cbd9ed58;color:var(--cream)}.outline:hover{border-color:var(--gold);color:var(--gold)}
+.text-link,.hero-bundle-link{color:var(--gold);border-bottom-color:#f8ce7066}.hero-bundle-link:hover{color:#ffe4a9}
+.product-image{background:radial-gradient(ellipse at bottom,#17416c,#06244c 70%);border-color:#c7d8ec24}.bundle .product-image{border-color:#f8ce7066}
+.product-label{color:#cfdbec}.bundle .product-label{color:var(--gold)}.product-heading>span,.product p.size{color:var(--gold)}
+.product p,.product p.product-shipping{color:var(--muted)}s{color:#b6bfd0}.details-link{color:var(--cream)}.details-link:hover,.details-link span{color:var(--gold)}
+.shipping-note{background:#f8ce7008;border-color:#f8ce7045}.shipping-note>span{color:var(--gold)}.shipping-note strong{color:var(--cream)}
+.ritual{background:#062750;border-color:var(--line)}.steps article>span{color:var(--gold)}
+.founder-card{background:#001c47;border-color:#f8ce704f;padding:15px 20px 30px;gap:0}.founder-card:before{border-color:#f8ce7025;inset:15px;z-index:1}
+.founder-card .official-founder-logo{width:min(330px,100%);height:auto;max-width:100%;display:block}
+.founder-card p{position:relative;z-index:2;color:var(--cream)}.founder-card p span{color:#c1cee0}.founder-copy>p:not(.eyebrow){color:var(--muted)}
+.instagram-photo{background:#00132f;border-color:#f8ce7040}.instagram-photo:hover{border-color:var(--gold)}.image-expand{background:#001c47ec;border-color:#f8ce7070;color:var(--cream)}
+.gallery-footer>p,.instagram-card figcaption>p:not(.eyebrow){color:var(--muted)}
+footer{color:var(--cream)}footer p,.footer-links{color:#c1cee0}footer .brand-symbol{width:30px;height:42px}footer .brand-type{width:166px;height:50px}
+dialog{background:#05244b;color:var(--cream);border-color:#f8ce7040}dialog::backdrop{background:#000c20c9}
+.cart-thumb{background:#0e345d;border-color:#cbd9ed30}.cart-line p,.cart-bottom p,.detail-content p{color:var(--muted)}.quantity button{color:var(--cream);border-color:#cbd9ed40}.quantity .remove{color:#c1cee0}.icon-button{color:var(--cream)}
+.cart-bottom .preview-note{background:#f8ce700b;border-color:#f8ce704a;color:#ffe2a3}.cart-bottom #checkout-message{color:#ffe2a3}
+#product-details{background:#05244b;border-color:#f8ce7060}.detail-photo{background:radial-gradient(ellipse at bottom,#17416c,#06244c 70%);border-color:#cbd9ed30}.detail-content dt,.detail-content .detail-price{color:var(--gold)}
+#toast{background:var(--gold);color:#001c47}#toast-cart{color:#001c47;border-left-color:#001c4740}.skip{background:var(--gold);color:#001c47}
+@media(max-width:1050px){.header-inner nav{gap:16px;font-size:12px}.header-inner .brand-type{width:180px;height:54px}.header-inner .brand-symbol{width:36px;height:49px}.brand-identity{gap:8px}}
+@media(max-width:650px){.header-inner{height:80px}.header-inner .brand-symbol{width:28px;height:38px}.header-inner .brand-type{width:132px;height:40px}.header-inner .brand-identity{gap:4px}.header-inner nav a:first-child{font-size:10px}.header-inner nav{gap:0}.bag{font-size:10px}.official-seal img{width:36px;height:49px}.official-seal{padding:7px}.founder-card{padding:10px 15px 25px}.founder-card .official-founder-logo{width:290px}footer .brand-identity{gap:5px}footer .brand-symbol{width:24px;height:33px}footer .brand-type{width:138px;height:42px}}
