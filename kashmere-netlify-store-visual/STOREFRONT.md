@@ -106,3 +106,12 @@ These are writing templates, not factual product descriptions or adopted policie
 “[Business-approved return eligibility]. Contact [business support address] within [approved period] with your order number. [Approved rules for opened items, damaged deliveries, and return postage].”
 
 Do not publish these templates until the business supplies the actual terms and support email. The launch also still requires Stripe, domain, final packaging photographs, and removal of noindex once ready.
+
+
+## Approved founder photo and scent preview
+
+User supplied a photograph identifying Terrence Carr and approved publishing it in the founder section. `public/assets/terrence-carr.svg` embeds the original JPEG bytes unchanged. CSS frames the portrait responsively; no generated face or retouching was used.
+
+User approved the imagined butter scent copy: “A quietly refined scent with soft, creamy warmth and a crisp herbal edge—rounded out by a smooth, subtly sweet finish.” It appears only on the butter detail view, labeled Scent preview, with “An imagined scent profile; final notes to be confirmed.” It is not presented as a verified scent or applied to the oil.
+
+The previously supplied photograph of the butter label lists shea butter, grapeseed oil, sweet almond oil, tea tree oil, and fragrance. Butter and bundle formula sections reproduce this with attribution to the photographed label and a note to check the current product label. Oil ingredients and label-approved directions remain pending. The personal founder story remains pending; the supplied photo replaces the typography-only founder credit.
