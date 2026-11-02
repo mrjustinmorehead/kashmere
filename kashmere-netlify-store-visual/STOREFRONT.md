@@ -115,3 +115,10 @@ User supplied a photograph identifying Terrence Carr and approved publishing it 
 User approved the imagined butter scent copy: “A quietly refined scent with soft, creamy warmth and a crisp herbal edge—rounded out by a smooth, subtly sweet finish.” It appears only on the butter detail view, labeled Scent preview, with “An imagined scent profile; final notes to be confirmed.” It is not presented as a verified scent or applied to the oil.
 
 The previously supplied photograph of the butter label lists shea butter, grapeseed oil, sweet almond oil, tea tree oil, and fragrance. Butter and bundle formula sections reproduce this with attribution to the photographed label and a note to check the current product label. Oil ingredients and label-approved directions remain pending. The personal founder story remains pending; the supplied photo replaces the typography-only founder credit.
+
+
+## Instagram integration and clarified hero
+
+The opening hero now shows exactly one butter jar and one oil bottle, using the existing official-logo product assets. The dedicated King's Bundle card still shows two butters plus one oil to represent its confirmed contents.
+
+Removed the Brand Journal, editorial captions, and price-sheet link from the page. A simple Kashmere on Instagram section replaces it, with an official account link and two native Instagram post embeds (DTTHi9FESJQ and DY3IqhhNBdB), loaded by Instagram's embed.js. Posts were verified rendering with photos and account/profile controls in browser QA. These are selected posts, not an automatically updating feed. Original self-hosted images remain inside fallback links if the embed script cannot load. No API credentials or messages are involved.
