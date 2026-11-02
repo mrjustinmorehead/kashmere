@@ -51,6 +51,13 @@ document.addEventListener('click', event => {
     dt.textContent = label; dd.textContent = value;
     specs.append(dt, dd);
   }
+  document.getElementById('detail-scent').hidden = trigger.dataset.details !== 'beard_butter';
+  const butterFormula = 'As listed on the photographed butter label: shea butter, grapeseed oil, sweet almond oil, tea tree oil, and fragrance. Please check your product label for the current formula. Application directions will be confirmed before online ordering opens.';
+  document.getElementById('detail-formula').textContent = trigger.dataset.details === 'beard_butter'
+    ? butterFormula
+    : trigger.dataset.details === 'beard_kit'
+      ? `Butter: ${butterFormula} Oil ingredients and directions are still to be confirmed.`
+      : 'Oil ingredients, scent notes, and label-approved application directions will be confirmed before online ordering opens. Please contact Kashmere with specific ingredient questions.';
   dialog.querySelector('.formula-details').open = false;
   dialog.showModal();
   dialog.scrollTop = 0;
