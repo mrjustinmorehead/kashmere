@@ -27,3 +27,15 @@ JavaScript syntax checks passed. Mock checkout checks covered malformed input, i
 - The site is explicitly a collection preview. `ONLINE_CHECKOUT_ENABLED` in public/app.js is false; the bag works, but the payment button stays disabled. Stripe and the custom domain are intentionally deferred by the user. The backend was not changed in this pass.
 - A noindex/nofollow meta tag keeps this preview out of search results. At launch, remove that tag, confirm product information and policies, set up the custom domain and payment/shipping/tax configuration, then enable the checkout flag and validate the full payment/confirmation/fulfillment flow.
 - Still needed from the business: real product photos; full ingredients, scent details and label-approved directions; actual processing and return terms; business contact email; authentic approved customer feedback. Analytics selection remains a launch decision; no third-party tracking was added.
+
+
+## Instagram gallery
+
+The user explicitly requested review and publication of photos from the official Instagram account. The selected original media were downloaded through the browser and are bundled with the site, avoiding expiring Instagram CDN links and third-party embed scripts. SVG image containers preserve the downloaded JPEG pixels; no generative image edits were made.
+
+Sources reviewed:
+- Product photograph: https://www.instagram.com/p/DTTHi9FESJQ/?img_index=1 (January 9, 2026). Butter jars and the original packaging. The other images in this post were personal portraits and were not selected.
+- Earn Your Crown campaign artwork: https://www.instagram.com/p/DY3IqhhNBdB/ (May 27, 2026). This is labeled campaign artwork on the site, not represented as a documentary product photo.
+- Official price sheet: https://www.instagram.com/p/DZQYK41iX-T/?img_index=2 (June 6, 2026). Its parent carousel carried an Instagram AI content label. Published as an optional full-size price-sheet image, not a product photograph.
+
+The gallery appears after the collection, with full-image links, source-post links and a note that packaging varies between posts. Current catalog cards and pricing remain unchanged. No private messages, personal portrait posts, commenter testimonials, credentials or session information were included. Payments remain disabled for the prelaunch preview.
