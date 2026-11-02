@@ -1,30 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
-  <defs>
-    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0" stop-color="#151823"/>
-      <stop offset="1" stop-color="#0b0c10"/>
-    </linearGradient>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0" stop-color="#d6b46a"/>
-      <stop offset="1" stop-color="#a9863c"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="40%" cy="18%" r="70%">
-      <stop offset="0" stop-color="#d6b46a" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#d6b46a" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <rect width="900" height="520" rx="40" fill="url(#bg)"/>
-  <rect width="900" height="520" rx="40" fill="url(#glow)"/>
-  <circle cx="710" cy="120" r="160" fill="#d6b46a" opacity="0.06"/>
-  
-        <g fill="none" stroke="url(#g)" stroke-width="7" opacity="0.95">
-          <rect x="160" y="120" width="200" height="128" rx="30"/>
-          <path d="M176 138h168"/>
-          <path d="M206 196h108"/>
-          <path d="M220 224h80"/>
-        </g>
-        
-  <text x="450" y="72" text-anchor="middle" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Arial" font-size="34" font-weight="900" fill="#f3f4f6">Kashmere Beard Butter</text>
-  <text x="450" y="108" text-anchor="middle" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Arial" font-size="16" font-weight="700" fill="#b7bcc7">Deep Conditioning Beard & Skin Butter</text>
-  <text x="450" y="470" text-anchor="middle" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Arial" font-size="14" font-weight="700" fill="#b7bcc7">Premium • Small-batch • Secure checkout</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img"><defs>
+<linearGradient id="glass"><stop stop-color="#030914" /><stop offset=".19" stop-color="#1a2b54" /><stop offset=".38" stop-color="#111a35" /><stop offset=".72" stop-color="#080f24" /><stop offset=".93" stop-color="#192442" /><stop offset="1" stop-color="#030610" /></linearGradient>
+<linearGradient id="gold"><stop stop-color="#75501c" /><stop offset=".13" stop-color="#ddbd77" /><stop offset=".24" stop-color="#f8dfa1" /><stop offset=".42" stop-color="#b88b40" /><stop offset=".66" stop-color="#e3c37c" /><stop offset=".87" stop-color="#a37529" /><stop offset="1" stop-color="#6d4916" /></linearGradient>
+<linearGradient id="label"><stop stop-color="#111a31" /><stop offset=".5" stop-color="#091128" /><stop offset="1" stop-color="#17203c" /></linearGradient>
+<linearGradient id="dropper"><stop stop-color="#000" /><stop offset=".3" stop-color="#3b3b3b" /><stop offset=".5" stop-color="#111" /><stop offset="1" stop-color="#000" /></linearGradient>
+<radialGradient id="shadow"><stop stop-opacity=".7" /><stop offset="1" stop-opacity="0" /></radialGradient>
+<g id="mark" fill="#d4af68"><path d="M-37-22l9 32h56l9-32-22 16L0-35-15-6z" /><path d="M-27 16h54v5h-54z" /><path d="M-25 28q0 37 25 48 25-11 25-48-11 13-25 1-14 12-25-1zm9 15q8 5 16 0 8 5 16 0-2 14-16 22-14-8-16-22z" /><circle cy="-38" r="4" /><circle cx="-39" cy="-24" r="4" /><circle cx="39" cy="-24" r="4" /></g>
+<g id="jar"><ellipse cx="135" cy="312" rx="154" ry="35" fill="url(#shadow)" /><rect x="6" y="64" width="258" height="240" rx="34" fill="url(#glass)" stroke="#7d87972b" stroke-width="2" /><rect x="15" y="95" width="240" height="187" rx="9" fill="url(#label)" stroke="#af8c4c" stroke-width="1" /><path d="M15 106h240M15 269h240" stroke="#9d7d40" stroke-width="1" /><rect x="5" y="25" width="260" height="61" rx="10" fill="url(#gold)" /><ellipse cx="135" cy="27" rx="126" ry="8" fill="#e5c786" stroke="#977035" /><path d="M19 40v34M28 38v38M239 38v37M249 38v33" stroke="#f9e5b2" opacity=".3" /><text x="135" y="128" fill="#d6b26a" text-anchor="middle" font-family="Georgia,serif" font-size="19" letter-spacing="2">KASHMERE</text><use href="#mark" transform="translate(135 163) scale(.42)" /><text x="135" y="224" fill="#f0e9d7" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" letter-spacing=".4">BEARD &amp; BODY BUTTER</text><text x="135" y="245" fill="#c8aa70" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.6">HYDRATE · SOFTEN · NOURISH</text><text x="135" y="265" fill="#c8aa70" text-anchor="middle" font-family="Arial,sans-serif" font-size="8">4 OZ | 118 ML</text><path d="M23 90v174" stroke="#8594b7" stroke-width="3" opacity=".12" /></g>
+<g id="oil"><ellipse cx="82" cy="410" rx="106" ry="27" fill="url(#shadow)" /><path d="M51 112v31q-43 10-43 53v181q0 25 25 25h99q25 0 25-25V196q0-43-43-53v-31z" fill="url(#glass)" stroke="#8b95aa44" stroke-width="2" /><rect x="42" y="83" width="82" height="69" rx="5" fill="url(#gold)" /><path d="M64 83V31q0-25 19-25t19 25v52z" fill="url(#dropper)" stroke="#aca69577" /><path d="M72 28v45" stroke="#fff" opacity=".2" stroke-width="2" /><rect x="17" y="201" width="131" height="169" rx="9" fill="url(#label)" stroke="#ae8a46" /><path d="M17 211h131M17 358h131" stroke="#b29555" /><text x="83" y="234" text-anchor="middle" fill="#d6b26a" font-family="Georgia,serif" font-size="14" letter-spacing=".5">KASHMERE</text><use href="#mark" transform="translate(83 269) scale(.35)" /><text x="83" y="319" fill="#f0e9d7" text-anchor="middle" font-family="Arial,sans-serif" font-size="10">BEARD GROWTH OIL</text><text x="83" y="338" fill="#c8aa70" text-anchor="middle" font-family="Arial,sans-serif" font-size="6" letter-spacing=".5">YOUR DAILY GROOMING RITUAL</text><text x="83" y="353" fill="#c8aa70" text-anchor="middle" font-family="Arial,sans-serif" font-size="7">2 OZ | 59 ML</text></g></defs><use href="#jar" x="25" y="15" /></svg>

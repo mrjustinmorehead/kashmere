@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120">
-  <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0" stop-color="#d6b46a"/>
-      <stop offset="1" stop-color="#a9863c"/>
-    </linearGradient>
-  </defs>
-  <rect x="8" y="8" width="104" height="104" rx="28" fill="#0f1014" stroke="url(#g)" stroke-width="3"/>
-  <path d="M60 36c8 9 16 9 24 0 0 12-4 22-12 28 0 10 6 16 14 18-9 7-20 9-26 9s-17-2-26-9c8-2 14-8 14-18-8-6-12-16-12-28 8 9 16 9 24 0z"
-        fill="url(#g)" opacity="0.95"/>
-  <text x="132" y="70" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Arial" font-size="40" font-weight="900" fill="#f3f4f6">Kashmere</text>
-  <text x="134" y="98" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Arial" font-size="14" font-weight="700" fill="#b7bcc7" letter-spacing="1.2">BEARD CARE</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="47" fill="#0b0c10" stroke="#cfaa65" stroke-width="1.5" /><g id="mark" fill="#d4af68" transform="translate(50 37) scale(.62)"><path d="M-37-22l9 32h56l9-32-22 16L0-35-15-6z" /><path d="M-27 16h54v5h-54z" /><path d="M-25 28q0 37 25 48 25-11 25-48-11 13-25 1-14 12-25-1zm9 15q8 5 16 0 8 5 16 0-2 14-16 22-14-8-16-22z" /><circle cy="-38" r="4" /><circle cx="-39" cy="-24" r="4" /><circle cx="39" cy="-24" r="4" /></g></svg>
